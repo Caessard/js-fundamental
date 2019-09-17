@@ -12,7 +12,8 @@ var daniela = {
     age: 23
 }
 
-function printNameInUpperCamel({ name }){    
+function printNameInUpperCamel(person){    
+    var { name } = person
     console.log(name.toUpperCase())
 }
 
