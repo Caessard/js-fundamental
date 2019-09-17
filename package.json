@@ -1,0 +1,19 @@
+{
+  "name": "fundamentos-js",
+  "version": "1.0.0",
+  "description": "Course of fundamental Javascript",
+  "main": "class1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caessard/js-fundamental.git"
+  },
+  "author": "César Hansy Dueñas Barragán",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caessard/js-fundamental/issues"
+  },
+  "homepage": "https://github.com/Caessard/js-fundamental#readme"
+}
