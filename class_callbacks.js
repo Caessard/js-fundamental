@@ -3,16 +3,23 @@ const PEOPLE_URL = 'people/:id'
 
 const options = { crossDomain: true }
 
-const onPeopleResponse = function(person){
-    console.log(`Hola, yo soy ${person.name}`)
-}
-
-function getCharacter(id){
+function getCharacter(id, callback){
     const url = `${API_URL}${PEOPLE_URL.replace(':id',id)}`
-    $.get(url, options, onPeopleResponse)
+    $.get(url, options, function(person){
+        console.log(`Hola, yo soy ${person.name}`)
+    })
 }
 
-for(i = 1; i<=100; i++){
-    getCharacter(i)
-}
-
+getCharacter(1, function (){
+    getCharacter(2, function () {
+        getCharacter(3, function(){
+            getCharacter(4, function(){
+                getCharacter(5, function () {
+                    getCharacter(6, function (){
+                        getCharacter(7)
+                    })
+                })
+            })
+        })
+    })
+})
