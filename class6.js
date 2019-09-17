@@ -12,10 +12,9 @@ var daniela = {
     age: 23
 }
 
-function printNameInUpperCamel(name){
-    name = name.toUpperCase()
-    console.log(name)
+function printNameInUpperCamel(person){    
+    console.log(person.name.toUpperCase())
 }
 
-printNameInUpperCamel(cesar.name)
-printNameInUpperCamel(daniela.name)
+printNameInUpperCamel(cesar)
+printNameInUpperCamel(daniela)
