@@ -12,7 +12,7 @@ function getCharacter(id){
     $.get(url, options, onPeopleResponse)
 }
 
-for(var i = 1; i==100; i++){
+for(i = 1; i<=100; i++){
     getCharacter(i)
 }
 
