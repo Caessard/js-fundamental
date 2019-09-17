@@ -1,8 +1,8 @@
 var name = 'César'
 
-function printNameInUpperCamel(n){
-    n = n.toUpperCase()
-    console.log(n)
+function printNameInUpperCamel(name){
+    name = name.toUpperCase()
+    console.log(name)
 }
 
 printNameInUpperCamel(name)
