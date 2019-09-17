@@ -18,3 +18,4 @@ function printNameInUpperCamel({ name }){
 
 printNameInUpperCamel(cesar)
 printNameInUpperCamel(daniela)
+printNameInUpperCamel({name: 'Pepito'})
