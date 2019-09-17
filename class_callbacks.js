@@ -8,7 +8,7 @@ function getCharacter(id, callback){
     
     $
     .get(url, options, callback)
-    .fail(function () {
+    .fail(() => {
         console.log(`Sucedió un error. No se pudo obtener el personaje ${id}.`)        
     })
 }
