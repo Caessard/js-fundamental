@@ -5,8 +5,12 @@ const options = { crossDomain: true }
 
 function getCharacter(id, callback){
     const url = `${API_URL}${PEOPLE_URL.replace(':id',id)}`
-    $.get(url, options, function(person){
+    $.get(url, options, function(person){        
         console.log(`Hola, yo soy ${person.name}`)
+
+        if (callback){
+            callback()
+        }
     })
 }
 
