@@ -23,7 +23,10 @@ function printNameAndAge(person){
 }
 
 function birthday(person){
-    person.age += 1
+    return {
+        ...person,
+        age: person.age + 1
+    }    
 }
 
 printNameInUpperCamel(cesar)
