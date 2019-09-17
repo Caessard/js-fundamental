@@ -22,6 +22,10 @@ function printNameAndAge(person){
     console.log(`Hola, me llamo ${name} y tengo ${age} años.`)
 }
 
+function birthday(person){
+    person.age += 1
+}
+
 printNameInUpperCamel(cesar)
 printNameInUpperCamel(daniela)
 printNameInUpperCamel({name: 'Pepito'})
