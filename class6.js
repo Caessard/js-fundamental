@@ -17,6 +17,15 @@ function printNameInUpperCamel(person){
     console.log(name.toUpperCase())
 }
 
+function printNameAndAge(person){
+    var {name, age} = person
+    console.log(`Hola, me llamo ${name} y tengo ${age} años.`)
+}
+
 printNameInUpperCamel(cesar)
 printNameInUpperCamel(daniela)
 printNameInUpperCamel({name: 'Pepito'})
+
+/*Deconstruct object challenge*/
+printNameAndAge(cesar)
+printNameAndAge(daniela)
