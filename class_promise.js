@@ -20,8 +20,32 @@ function onError(id){
 }
 
 getCharacter(1)
-    .then(function (character){
+    .then(character =>{
         console.log(`El personaje 1 es ${character.name}`)
+        return getCharacter(2)
+    })
+    .then(character => {
+        console.log(`El personaje 2 es ${character.name}`)
+        return getCharacter(3)
+    })
+    .then(character => {
+        console.log(`El personaje 3 es ${character.name}`)
+        return getCharacter(4)
+    })
+    .then(character => {
+        console.log(`El personaje 4 es ${character.name}`)
+        return getCharacter(5)
+    })
+    .then(character => {
+        console.log(`El personaje 5 es ${character.name}`)  
+        return getCharacter(6)      
+    })
+    .then(character => {
+        console.log(`El personaje 6 es ${character.name}`)  
+        return getCharacter(7)      
+    })
+    .then(character => {
+        console.log(`El personaje 7 es ${character.name}`)           
     })
     .catch(onError)
 
